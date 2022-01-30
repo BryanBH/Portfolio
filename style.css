@@ -1,0 +1,72 @@
+/* Reset and common styles*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;
+    color: white;
+}
+/* end of reset on common styles*/
+
+/*section 1*/
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(255, 255, 255, 0.102),rgba(255, 255, 255, 0.123)), url(images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg),center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-1-heading{
+    font-size: 6rem;
+    font-weight:700;
+    background-color: #e85b04ca;
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: 0.3rem solid #fff;
+    text-shadow: 0.2rem.2rem 1rem #555;
+    transform: skew(-10deg);
+}
+.person-img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .7rem dotted #e85b04ca;
+    background-color: #e85b0431;
+    padding: 0.2rem;
+    /* opacity: 0.9; */
+}
+.person-name{
+    font-size: 2rem;
+    color: #fff;
+    background-color:#e85b04ca;
+    margin: 5rem 0;
+    padding: .5rem 3rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
+}
+.section-1-btn{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color:#333;
+    background-color: #fff;
+    border: 0.3rem solid #333;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+}
+/*end of section1*/
