@@ -11,6 +11,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 .center {
     display: flex;
@@ -22,9 +23,14 @@ html {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     border-bottom: 0.3rem solid #333;
     text-shadow: 0.2rem 0.2rem 0.5rem #555;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    letter-spacing: .1rem;
 }
 /* end of reset on common styles*/
 
@@ -87,6 +93,8 @@ html {
     height: 4rem;
     background-color: #e85b04c9;
     box-shadow: 0.2rem 0.2rem 0.5 #555;
+    position: absolute;
+    z-index: 300;
 }
 .navbar-link {
     font-size: 1.7rem;
@@ -97,6 +105,9 @@ html {
     text-transform: uppercase;
     position: relative;
     transition: color 0.25s;
+}
+.change.navbar-link {
+    color: #fff;
 }
 .navbar-link:hover {
     color: #fff;
@@ -110,6 +121,9 @@ html {
     right: -15%;
     bottom: -0.3rem;
     transition: width 0.25s;
+}
+.change.navbar-link::before{
+    width:130%;
 }
 .navbar-link:hover::before {
     width: 130%;
@@ -153,12 +167,12 @@ html {
     font-size: 1.8rem;
     font-weight: 700;
 }
-
 .progress-percent {
-    width: 90%;
+    width: 0;
     height: 100%;
     background-color: #e85b04ca;
     border-radius: 0.3rem;
+    transition: width .5s .5s ease-in-out;
 }
 .services {
     width: 100%;
@@ -190,7 +204,56 @@ html {
 }
 /*End of Section 2*/
 /*Section 3*/
-.section-3 {
+.section-3{
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-card-wrapper{
+    width: 80%;
+    flex-wrap: wrap;
+}
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem;
+    background-color: #eef;
+    box-shadow: .3rem .3rem .5rem #777;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow .5s;
+    border-radius: 2rem;
+    padding: 1.3rem;
+}
+.card-name{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+}
+.experience-card-text ul {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 400;
+    
+}
+.card-sub-name{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+
+/*End of Section 3*/
+
+/*Section 4*/
+.section-4 {
     width: 100%;
     height: 100%;
     padding: 10rem 0;
@@ -220,8 +283,6 @@ html {
     box-shadow: 1rem 1rem 1rem #777;
 }
 .project-text{
-    text-align: center;
-    letter-spacing: .1rem;
     position: absolute;
     top: -10rem;
     z-index: 2;
@@ -239,14 +300,14 @@ html {
 }
 .project-technologies{
     font-size: 1.8rem;
-    color: #e85b04ca
+    color: black
 }
 .project-img{
     width: 40rem;
     transition: opacity .3s;
 }
 .project:hover .project-img{
-    opacity: .4;
+    opacity: .1;
 }
 .project-link{
     font-size: 2rem;
@@ -264,9 +325,9 @@ html {
     bottom: 5rem;
     transition: bottom .25s .25s;
 }
-/*End of Section 3*/
-/*Section 4*/
-.section-4{
+/*End of Section 4*/
+/*Section 5*/
+.section-5{
     width: 100%;
     height: 30vh;
     background-color: #222;
@@ -293,4 +354,68 @@ html {
     font-weight: 300;
     text-align: center;
 }
-/*End of Section 4*/
+/*End of Section 5*/
+/* Responsive Settings*/
+@media (max-width: 1200px) {
+    .services{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .service{
+        margin: 3rem 2rem;
+    }
+}
+@media (max-width:800px) {
+    .section-1-heading{
+        font-size: 4rem;
+    }
+    .progress-bar{
+        width: 50rem;
+    }
+}
+@media (max-width: 600px) {
+    .section-1-heading{
+        font-size: 3rem;
+    }
+
+    .navbar-link{
+        margin: 0 2rem;
+        font-size: 1.5rem;
+    }
+    .section-2{
+        padding: 10rem;
+    }
+    .section-2-heading{
+        margin-bottom: 10rem;
+    }
+    
+    .progress-bar{
+        width: 45rem;
+    }
+    .project-img{
+        width: 100%;
+    }
+    .copyright{
+        width: 70%;
+    }
+}
+@media (max-width:500px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+    .section-1-heading{
+        font-size: 2.5rem;
+    }
+    .navbar-link{
+        margin: 0 1.5rem;
+    }
+    .progress-bar{
+        width: 40rem;
+    }
+}
+/* End of Responsive Settings*/

@@ -1,9 +1,40 @@
-const navbar = document.querySelector("navbar");
+const navbar = document.querySelector(".navbar");
+const navbaroffset = navbar.offsetTop;
+const sections = document.querySelectorAll("section");
+const navbarLinks = document.querySelectorAll(".navbar-link");
+const progress = document.querySelector(".progress-bars-wrapper");
+const progressBarPercents =[80,50,75,70,50,60];
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY >= navbar.offsetTop){
+    mainFn();
+});
+
+const mainFn = () =>{
+    if(window.scrollY >= navbaroffset){
         navbar.classList.add("sticky");
-    } else {
+    } else{
         navbar.classList.remove("sticky");
     }
+
+    sections.forEach((section, i) => {
+        if(window.scrollY >= section.offsetTop -10){
+            navbarLinks.forEach(navbarLink =>{
+                navbarLink.classList.remove("change");
+            })
+            navbarLinks[i].classList.add("change");
+        }
+    });
+
+    if(window.scrollY + window.innerHeight >= progress.offsetTop){
+        document.querySelectorAll(".progress-percent").forEach((current, i) =>{
+            current.style.width = `${progressBarPercents[i]}%`;
+            current.previousElementSibling.firstElementChild.textContent = progressBarPercents[i];
+        })
+    }
+}
+
+mainFn();
+
+window.addEventListener("resize",() =>{
+    window.location.reload();
 });
