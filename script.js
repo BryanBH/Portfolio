@@ -17,6 +17,7 @@ const mainFn = () =>{
         navbar.classList.remove("sticky");
     }
 
+    // Navabr color change 
     sections.forEach((section, i) => {
         if(window.scrollY >= section.offsetTop -10){
             navbarLinks.forEach(navbarLink =>{
@@ -26,6 +27,7 @@ const mainFn = () =>{
         }
     });
 
+    // Progress bar text content changer  
     if(window.scrollY + window.innerHeight >= progress.offsetTop){
         document.querySelectorAll(".progress-percent").forEach((current, i) =>{
             current.style.width = `${progressBarPercents[i]}%`;
