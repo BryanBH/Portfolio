@@ -10,6 +10,7 @@ window.addEventListener("scroll", () => {
 });
 
 const mainFn = () =>{
+    // Sticky navbar if/else statement 
     if(window.scrollY >= navbaroffset){
         navbar.classList.add("sticky");
     } else{

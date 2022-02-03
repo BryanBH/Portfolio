@@ -28,9 +28,9 @@ html {
     text-shadow: 0.2rem 0.2rem 0.5rem #555;
     text-align: center;
 }
-.text{
+.text {
     text-align: center;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 }
 /* end of reset on common styles*/
 
@@ -122,13 +122,13 @@ html {
     bottom: -0.3rem;
     transition: width 0.25s;
 }
-.change.navbar-link::before{
-    width:130%;
+.change.navbar-link::before {
+    width: 130%;
 }
 .navbar-link:hover::before {
     width: 130%;
 }
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
 }
@@ -172,7 +172,7 @@ html {
     height: 100%;
     background-color: #e85b04ca;
     border-radius: 0.3rem;
-    transition: width .5s .5s ease-in-out;
+    transition: width 0.5s 0.5s ease-in-out;
 }
 .services {
     width: 100%;
@@ -204,7 +204,7 @@ html {
 }
 /*End of Section 2*/
 /*Section 3*/
-.section-3{
+.section-3 {
     width: 100%;
     height: 100%;
     padding: 10rem 0;
@@ -213,25 +213,25 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.experience-card-wrapper{
+.experience-card-wrapper {
     width: 80%;
     flex-wrap: wrap;
 }
-.experience-card{
+.experience-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1.3rem;
     background-color: #eef;
-    box-shadow: .3rem .3rem .5rem #777;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
     position: relative;
     overflow: hidden;
-    transition: box-shadow .5s;
+    transition: box-shadow 0.5s;
     border-radius: 2rem;
     padding: 1.3rem;
 }
-.card-name{
+.card-name {
     font-size: 3rem;
     font-weight: 700;
     color: #333;
@@ -241,14 +241,12 @@ html {
     font-size: 1.8rem;
     text-align: center;
     font-weight: 400;
-    
 }
-.card-sub-name{
+.card-sub-name {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
 }
-
 
 /*End of Section 3*/
 
@@ -262,159 +260,159 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.projects-wrapper{
+.projects-wrapper {
     width: 80%;
     flex-wrap: wrap;
 }
-.project{
+.project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
     background-color: #fff;
-    box-shadow: .3rem .3rem .5rem #777;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
     position: relative;
     overflow: hidden;
-    transition: box-shadow .5s;
+    transition: box-shadow 0.5s;
     border-radius: 2rem;
 }
-.project:hover{
+.project:hover {
     box-shadow: 1rem 1rem 1rem #777;
 }
-.project-text{
+.project-text {
     position: absolute;
     top: -10rem;
     z-index: 2;
-    transition: top .3s;
+    transition: top 0.3s;
 }
-.project:hover .project-text{
+.project:hover .project-text {
     top: 3rem;
-    transition:  top .25s .25s;
+    transition: top 0.25s 0.25s;
 }
-.project-name{
+.project-name {
     font-size: 3rem;
     font-weight: 700;
     color: rgb(20, 20, 20);
     text-transform: capitalize;
 }
-.project-technologies{
+.project-technologies {
     font-size: 1.8rem;
-    color: black
+    color: black;
 }
-.project-img{
+.project-img {
     width: 40rem;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 }
-.project:hover .project-img{
-    opacity: .1;
+.project:hover .project-img {
+    opacity: 0.1;
 }
-.project-link{
+.project-link {
     font-size: 2rem;
     font-weight: 500;
     color: #333;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     border: 0.3rem solid #e85b04ca;
     padding: 0 1rem;
     background-color: #fff;
     position: absolute;
     bottom: -5rem;
-    transition: bottom .3s;
+    transition: bottom 0.3s;
 }
-.project:hover .project-link{
+.project:hover .project-link {
     bottom: 5rem;
-    transition: bottom .25s .25s;
+    transition: bottom 0.25s 0.25s;
 }
 /*End of Section 4*/
 /*Section 5*/
-.section-5{
+.section-5 {
     width: 100%;
     height: 30vh;
     background-color: #222;
     flex-direction: column;
 }
-.social-media{
+.social-media {
     margin-bottom: 5rem;
 }
-.social-media-link{
-    margin:0.2rem;
+.social-media-link {
+    margin: 0.2rem;
     padding: 0.7rem;
     background-color: #e85b04ca;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     display: inline-block;
 }
-.social-media-link img{
+.social-media-link img {
     width: 4rem;
     height: 4rem;
 }
-.copyright{
+.copyright {
     color: #aaa;
     font-size: 2rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-weight: 300;
     text-align: center;
 }
 /*End of Section 5*/
 /* Responsive Settings*/
 @media (max-width: 1200px) {
-    .services{
+    .services {
         height: auto;
         flex-wrap: wrap;
     }
-    .service{
+    .service {
         margin: 3rem 2rem;
     }
 }
-@media (max-width:800px) {
-    .section-1-heading{
+@media (max-width: 800px) {
+    .section-1-heading {
         font-size: 4rem;
     }
-    .progress-bar{
+    .progress-bar {
         width: 50rem;
     }
 }
 @media (max-width: 600px) {
-    .section-1-heading{
+    .section-1-heading {
         font-size: 3rem;
     }
 
-    .navbar-link{
+    .navbar-link {
         margin: 0 2rem;
         font-size: 1.5rem;
     }
-    .section-2{
+    .section-2 {
         padding: 10rem;
     }
-    .section-2-heading{
+    .section-2-heading {
         margin-bottom: 10rem;
     }
-    
-    .progress-bar{
+
+    .progress-bar {
         width: 45rem;
     }
-    .project-img{
+    .project-img {
         width: 100%;
     }
-    .copyright{
+    .copyright {
         width: 70%;
     }
 }
-@media (max-width:500px) {
-    html{
+@media (max-width: 500px) {
+    html {
         font-size: 55%;
     }
 }
-@media (max-width:450px) {
-    html{
+@media (max-width: 450px) {
+    html {
         font-size: 45%;
     }
-    .section-1-heading{
+    .section-1-heading {
         font-size: 2.5rem;
     }
-    .navbar-link{
+    .navbar-link {
         margin: 0 1.5rem;
     }
-    .progress-bar{
+    .progress-bar {
         width: 40rem;
     }
 }
